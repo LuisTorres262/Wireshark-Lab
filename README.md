@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
+<h1>Wireshark - Using wireshark to observe network traffic</h1>
 
 
 <h2>Microsoft Azure Resources</h2>
