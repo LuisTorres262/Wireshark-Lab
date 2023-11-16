@@ -3,12 +3,14 @@
 </p>
 
 <h1>Wireshark - Using wireshark to observe network traffic</h1>
+This lab demonstrates me using Wireshark to observe network traffic.
 
+<h2>Environments and Technologies Used</h2>
 
-<h2>Microsoft Azure Resources</h2>
-
-- Azure Virtual Machines
-- Azure Network Security Group
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- PowerShell
+- Wireshark
 
 <h2>Operating Systems Used </h2>
 
