@@ -7,7 +7,7 @@
 
 <h2>Microsoft Azure Resources</h2>
 
-- Azure Virtual Maichines
+- Azure Virtual Machines
 - Azure Network Security Group
 
 <h2>Operating Systems Used </h2>
@@ -32,17 +32,38 @@ Open up the Microsoft 10 virtual machine and download wireshark.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1usOMVb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Ping the other virtual machine running linux. 
+Ping the other VM running Linux and ping www.google.com. Ping was successfull on both and no packets were lost. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VFdqX8w.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Perpetual ping the private IP address of the virtual machine running Linux from the VM running windows 10. Open the network security group the Linux VM is using and disable incoming ICMP traffic. Observe the traffic on wireshark and command line ping activity. Re-enable ICMP traffic for your Linux VM. Back in the windows 10 VM, observe the ICMP traffic in wireShark and the command line ping activity.
 </p>
 <br />
+
+
+<img src="https://i.imgur.com/gUvRDy5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+While observing wireshark, I noticed the ICMP traffic would get busy when I would ping the VM running Linux or ping www.google.com. When I diabled incoming ICMP traffic I noticed wireshark coming back with "no response". This changed when I re-enabled ICMP traffic. 
+
+
+<img src="https://i.imgur.com/neulSXX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Connect your Windows 10 VM to the VM using Linux using SSH.
+
+
+<img src="https://i.imgur.com/32yFNQ3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Filter for SSH traffic only. You can now see the SSH traffic in wireshark due to connecting the VM's with SSH. 
+
+
+
+
+
+
