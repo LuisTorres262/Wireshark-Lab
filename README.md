@@ -3,7 +3,7 @@
 </p>
 
 <h1>Wireshark - Using wireshark to observe network traffic</h1>
-This lab demonstrates me using Wireshark to observe network traffic.
+This is a lab where I use Wireshark to observe network traffic. 
 
 <h2>Environments and Technologies Used</h2>
 
