@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<img src="https://i.imgur.com/T1otXpv.png" alt="osTicket logo"/>
 </p>
 
 <h1>Wireshark - Using wireshark to observe network traffic</h1>
@@ -19,7 +19,6 @@
 
 - Create a Virtual Machine in azure running Windows 10
 - Create a Virtual Machine in azure running Linux (Ubuntu)
-- Item 2
 
 <h2>Lab Steps</h2>
 
