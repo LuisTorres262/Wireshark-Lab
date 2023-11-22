@@ -3,7 +3,7 @@
 </p>
 
 <h1>Wireshark - Using Wireshark to observe network traffic</h1>
-This is a lab where I use Wireshark to observe network traffic. 
+This is a tutorial on how to use Wireshark and observe network traffic. 
 
 <h2>Environments and Technologies Used</h2>
 
@@ -38,7 +38,7 @@ Open up the Microsoft 10 virtual machine and download Wireshark.
 <img src="https://i.imgur.com/1usOMVb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Ping the other VM running Linux and ping www.google.com. Ping was successful on both and no packets were lost. 
+Open Powershell, ping the other VM running Linux, and ping www.google.com. The ping should be successful with no packets lost.  
 </p>
 <br />
 
@@ -53,7 +53,7 @@ Perpetual ping the private IP address of the virtual machine running Linux from 
 
 <img src="https://i.imgur.com/gUvRDy5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-While observing Wireshark, I noticed the ICMP traffic would get busy when I would ping the VM running Linux or ping www.google.com. When I disabled incoming ICMP traffic I noticed Wireshark coming back with "no response". This changed when I re-enabled ICMP traffic. 
+While observing Wireshark, you will notice the ICMP traffic gets busy when you ping the VM running Linux or ping www.google.com. When you disable incoming ICMP traffic you should see Wireshark coming back with "no response". This will change when you re-enable ICMP traffic. 
 
 
 <img src="https://i.imgur.com/neulSXX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
