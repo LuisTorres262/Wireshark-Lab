@@ -70,7 +70,7 @@ Filter for SSH traffic only. You can now see the SSH traffic in Wireshark due to
 
 Set Wireshark to filter DHCP traffic only. Using your Windows 10 VM, attempt to issue your VM a new IP address from the command line using the command "ipconfig/ renew".
 
-<img src="https://i.imgur.com/jTa7Td5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CJTdINV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 Observing Wireshark, you can see DHCP traffic appear. Getting a new IP address uses DHCP which is why we can view the traffic. We are done with the lab so we can delete the VMs so it does not continue to accrue charges.
 
