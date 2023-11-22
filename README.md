@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/T1otXpv.png" alt="osTicket logo"/>
 </p>
 
-<h1>Wireshark - Using wireshark to observe network traffic</h1>
+<h1>Wireshark - Using Wireshark to observe network traffic</h1>
 This is a lab where I use Wireshark to observe network traffic. 
 
 <h2>Environments and Technologies Used</h2>
