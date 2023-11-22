@@ -19,10 +19,17 @@ This is a lab where I use Wireshark to observe network traffic.
 
 <h2>List of Prerequisites</h2>
 
-- Create a Virtual Machine in azure running Windows 10
-- Create a Virtual Machine in azure running Linux (Ubuntu)
+- Create a Virtual Machine in Azure running Windows 10
+- Create a Virtual Machine in Azure running Linux (Ubuntu)
 
 <h2>Lab Steps</h2>
+<p>
+<img src="https://i.imgur.com/A9PQGhP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create two virtual machines. One of them will be running Windows 10, while the other will be running Linux (Ubuntu). 
+</p>
+<br />
 
 <p>
 <img src="https://i.imgur.com/wat4byn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -36,7 +43,7 @@ Open up the Microsoft 10 virtual machine and download Wireshark.
 <img src="https://i.imgur.com/1usOMVb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Ping the other VM running Linux and ping www.google.com. Ping was successfull on both and no packets were lost. 
+Ping the other VM running Linux and ping www.google.com. Ping was successful on both and no packets were lost. 
 </p>
 <br />
 
@@ -44,14 +51,14 @@ Ping the other VM running Linux and ping www.google.com. Ping was successfull on
 <img src="https://i.imgur.com/VFdqX8w.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Perpetual ping the private IP address of the virtual machine running Linux from the VM running windows 10. Open the network security group the Linux VM is using and disable incoming ICMP traffic. Observe the traffic on wireshark and command line ping activity. Re-enable ICMP traffic for your Linux VM. Back in the Windows 10 VM, observe the ICMP traffic in Wireshark and the command line ping activity.
+Perpetual ping the private IP address of the virtual machine running Linux from the VM running Windows 10. Open the network security group the Linux VM is using and disable incoming ICMP traffic. Observe the traffic on wireshark and command line ping activity. Re-enable ICMP traffic for your Linux VM. Back in the Windows 10 VM, observe the ICMP traffic in Wireshark and the command line ping activity.
 </p>
 <br />
 
 
 <img src="https://i.imgur.com/gUvRDy5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-While observing Wireshark, I noticed the ICMP traffic would get busy when I would ping the VM running Linux or ping www.google.com. When I diabled incoming ICMP traffic I noticed Wireshark coming back with "no response". This changed when I re-enabled ICMP traffic. 
+While observing Wireshark, I noticed the ICMP traffic would get busy when I would ping the VM running Linux or ping www.google.com. When I disabled incoming ICMP traffic I noticed Wireshark coming back with "no response". This changed when I re-enabled ICMP traffic. 
 
 
 <img src="https://i.imgur.com/neulSXX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -61,7 +68,7 @@ Connect your Windows 10 VM to the VM using Linux using SSH.
 
 <img src="https://i.imgur.com/32yFNQ3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-Filter for SSH traffic only. You can now see the SSH traffic in Wireshark due to connecting the VM's with SSH. 
+Filter for SSH traffic only. You can now see the SSH traffic in Wireshark due to connecting the VMs with SSH. 
 
 
 <img src="https://i.imgur.com/jTa7Td5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -70,6 +77,6 @@ Set Wireshark to filter DHCP traffic only. Using your Windows 10 VM, attempt to 
 
 <img src="https://i.imgur.com/jTa7Td5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-Observing wireshark, you can see DHCP traffic appear. Getting a new IP address uses DHCP which is why we can view the traffic. We are done with the lab so we can delete the VM's so it does not continue to accrue charges.
+Observing Wireshark, you can see DHCP traffic appear. Getting a new IP address uses DHCP which is why we can view the traffic. We are done with the lab so we can delete the VMs so it does not continue to accrue charges.
 
 
