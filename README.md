@@ -17,11 +17,6 @@ This is a lab where I use Wireshark to observe network traffic.
 - Windows 10</b> (21H2)
 - Linux (Ubuntu)
 
-<h2>List of Prerequisites</h2>
-
-- Create a Virtual Machine in Azure running Windows 10
-- Create a Virtual Machine in Azure running Linux (Ubuntu)
-
 <h2>Lab Steps</h2>
 <p>
 <img src="https://i.imgur.com/A9PQGhP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
